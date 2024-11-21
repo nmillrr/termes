@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'SpaceGrotesk-Bold';
+    src: url('static/assets/fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Medium';
+    src: url('static/assets/fonts/SpaceGrotesk/SpaceGrotesk-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Regular';
+    src: url('static/assets/fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('static/assets/fonts/SourceCodePro/SourceCodePro-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom left, #FBB040, #F15A29);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1-elements {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    transition: transform 260ms ease-out, opacity 260ms ease-out;
+}
+
+.container {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 14px;
+}
+
+.title {
+    font-family: 'SpaceGrotesk-Bold';
+    font-size: 30pt;
+    color: #FFFFFF;
+    margin-bottom: 2px;
+}
+
+.subtitle {
+    font-family: 'SpaceGrotesk-Medium';
+    font-size: 14pt;
+    color: #FFFFFF;
+    transition: opacity 0.3s ease;
+}
+
+.subtitle.loading {
+    opacity: 0.5;
+}
+
+.input-container {
+    width: 326px;
+    height: 300px;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255);
+    border: none;
+    border-radius: 13px;
+    padding: 10px;
+    font-family: 'Source Code Pro';
+    font-size: 10pt;
+    color: #424242;
+    opacity: 0.8;
+    resize: none;
+    box-sizing: border-box;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.analyze-button {
+    width: 229px;
+    height: 53px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    font-family: 'SpaceGrotesk-Bold';
+    font-size: 18pt;
+    color: #424242;
+    text-align: center;
+    line-height: 53px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.analyze-button.loading {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+.about-link {
+    font-family: 'SpaceGrotesk-Regular';
+    font-size: 14pt;
+    color: #FFFFFF;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+
+
+.ellipsis {
+    display: inline-block;
+    animation: ellipsis 1.5s infinite;
+}
+
+@keyframes ellipsis {
+    0%, 100% { content: ''; }
+    25% { content: '.'; }
+    50% { content: '..'; }
+    75% { content: '...'; }
+}
+
+textarea:disabled {
+    background-color: rgba(255, 255, 255, 0.83);
+    opacity: 0.5;
+}
+
+
+
+
+
+
+.page3-elements {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px;
+    opacity: 0;
+    transition: transform 260ms ease-out, opacity 260ms ease-out;
+}
+
+.hidden {
+    display: none;
+}
+
+.subheading {
+    font-family: 'SpaceGrotesk-Bold';
+    font-size: 14pt;
+    color: #424242;
+    margin: 0;
+    padding-left: 2px;
+    padding-bottom: 8px;
+}
+
+.new-header {
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+    padding-bottom: 0px;
+}
+
+.back-arrow {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.secondary-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+}
+
+.secondary-title {
+    font-family: 'SpaceGrotesk-Bold';
+    font-size: 28pt;
+    color: #FFFFFF;
+    margin-right: 68px;
+}
+
+.result-container {
+    background-color: rgba(255, 255, 255, 0.83);
+    border-radius: 13px;
+    padding: 10px;
+    margin: 10px 32px 20px 32px;
+}
+
+.summary {
+    height: 440px;
+}
+
+.summary-list {
+    list-style-type: disc;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding-inline: 10px;
+}
+
+.summary-list li {
+    font-family: 'SpaceGrotesk-Regular';
+    font-size: 10pt;
+    color: #424242;
+    margin-bottom: 15px;
+}

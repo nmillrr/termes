@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termes - Understand before you agree</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="page1-elements" class="page1-elements">
+            <div class="header">
+                <img src="static/assets/logo.png" alt="Termes Logo" class="logo">
+                <h1 id="termes" class="title">Termes</h1>
+                <h2 id="subtitle" class="subtitle">Understand before you agree</h2>
+            </div>
+            <div class="input-container">
+                <textarea id="termsSummary" placeholder="Paste terms here..."></textarea>
+            </div>
+
+            <button id="analyze-button" class="analyze-button">Analyze Terms</button>
+            <a href="#" class="about-link">About Termes</a>
+        </div>
+        <div id="page3-elements" class="page3-elements hidden">
+            <div class="new-header">
+                <img src="static/assets/arrow.svg" alt="Back Arrow" class="back-arrow" onclick="goBack()">
+                <img src="static/assets/logo.png" alt="Termes Logo" class="secondary-logo">
+                <h1 class="secondary-title">Termes</h1>
+            </div>
+            <div class="result-container summary">
+                <h2 class="subheading">Summary</h2>
+                <ul class="summary-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
