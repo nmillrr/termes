@@ -2,7 +2,7 @@
 
 Termes is a web app/browser extension that uses OpenAI's GPT model to summarize and clarify terms and conditions. Copy and paste your EULA into the app, and Termes will provide the key points about the document.
 
-###Here's how to run Termes:
+##Here's how to run Termes:
 
 1. Launch two terminal sessions; one will be used for the frontend, and the other for the backend.
 2. In one session, install a few modules:
