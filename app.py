@@ -36,7 +36,7 @@ def summarize():
 
         response = client.completions.create(
             model="gpt-3.5-turbo-instruct",
-            prompt=f"Summarize the following terms and conditions in 5 clear points:\n\n{terms}",
+            prompt=f"Summarize the following terms and conditions in 5 clear key points, each less than 100 characters, prioritizing the points that are most relevant to privacy and potential rights violations:\n\n{terms}",
             max_tokens=500,
             temperature=0.7
         )
