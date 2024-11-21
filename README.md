@@ -1,8 +1,10 @@
-#Termes: AI-Empowered Digital Experiences
+# Termes: An AI-Empowered Digital Experience
 
-Termes is a web app/browser extension that uses OpenAI's GPT model to summarize and clarify terms and conditions. Copy and paste your EULA into the app, and Termes will provide the key points about the document.
+Termes is a web app/browser extension that uses OpenAI's GPT model to summarize and clarify terms and conditions.
 
-##Here's how to run Termes:
+Copy and paste your EULA into the app, and Termes will provide the key points about the document.
+
+## Here's how to run Termes:
 
 1. Launch two terminal sessions; one will be used for the frontend, and the other for the backend.
 2. In one session, install a few modules:
@@ -13,7 +15,7 @@ pip install openai flask flask-cors
 ```
 export OPENAI_API_KEY='your-key-here'
 ```
-On Windows, use:
+  On Windows, use:
 ```
 set OPENAI_API_KEY=your-key-here
 ```
