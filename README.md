@@ -1,4 +1,4 @@
-# Termes: An AI-Empowered Digital Experience
+# Termes: AI-Empowered Web Experience
 
 Termes is a web app/browser extension that uses OpenAI's GPT model to summarize and clarify terms and conditions.
 
